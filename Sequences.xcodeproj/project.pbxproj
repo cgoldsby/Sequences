@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EBE51B6F1CD51DF000D1C678 /* Sequences.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE51B6E1CD51DF000D1C678 /* Sequences.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBE51B761CD51DF000D1C678 /* Sequences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE51B6B1CD51DF000D1C678 /* Sequences.framework */; };
-		EBE51B7B1CD51DF000D1C678 /* SequencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE51B7A1CD51DF000D1C678 /* SequencesTests.swift */; };
 		EBE51B871CD51F2200D1C678 /* ColorSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE51B861CD51F2200D1C678 /* ColorSequence.swift */; };
 		EBE51B891CD51F6400D1C678 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE51B881CD51F6400D1C678 /* ColorGenerator.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +28,6 @@
 		EBE51B6E1CD51DF000D1C678 /* Sequences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sequences.h; sourceTree = "<group>"; };
 		EBE51B701CD51DF000D1C678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE51B751CD51DF000D1C678 /* SequencesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SequencesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBE51B7A1CD51DF000D1C678 /* SequencesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencesTests.swift; sourceTree = "<group>"; };
 		EBE51B7C1CD51DF000D1C678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE51B861CD51F2200D1C678 /* ColorSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSequence.swift; sourceTree = "<group>"; };
 		EBE51B881CD51F6400D1C678 /* ColorGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 		EBE51B791CD51DF000D1C678 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				EBE51B7A1CD51DF000D1C678 /* SequencesTests.swift */,
 				EBE51B7C1CD51DF000D1C678 /* Info.plist */,
 			);
 			path = Tests;
@@ -216,7 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBE51B7B1CD51DF000D1C678 /* SequencesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
