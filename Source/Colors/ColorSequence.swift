@@ -2,8 +2,8 @@
 //  ColorSequence.swift
 //  Sequences
 //
-//  Created by Christopher Goldsby on 4/30/16.
-//
+//  License
+//  Released under an MIT license: http://opensource.org/licenses/MIT
 //
 
 import Foundation
