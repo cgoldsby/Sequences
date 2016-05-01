@@ -4,8 +4,8 @@ import Sequences
 let rainbow = UIColor.rainbowSequence()
 RainbowView(sequence: rainbow)
 
-let greys = UIColor.rainbowSequence(phase1: 0, phase2: 0, phase3: 0)
-RainbowView(sequence: greys)
+let grays = UIColor.rainbowSequence(phase1: 0, phase2: 0, phase3: 0)
+RainbowView(sequence: grays)
 
 let pastels = UIColor.rainbowSequence(amplitude: 25, center: 230)
 RainbowView(sequence: pastels)

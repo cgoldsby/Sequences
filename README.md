@@ -19,9 +19,9 @@ The color sequence can be adjusted by altering a set of input parameters:
 
 For more information on altering the color in the sequence please refer to the article by Jim Bumgardner: [Making annoying rainbows in javascript](http://krazydad.com/tutorials/makecolors.php).
 
-`let greys = UIColor.rainbowSequence(phase1: 0, phase2: 0, phase3: 0)`
+`let grays = UIColor.rainbowSequence(phase1: 0, phase2: 0, phase3: 0)`
 
-![Grey Rainbow](https://raw.githubusercontent.com/cgoldsby/Sequences/master/Images/rainbow-greys.png)
+![Gray Rainbow](https://raw.githubusercontent.com/cgoldsby/Sequences/master/Images/rainbow-grays.png)
 
 `let pastels = UIColor.rainbowSequence(amplitude: 55, center: 200)`
 
