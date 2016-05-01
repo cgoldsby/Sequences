@@ -1,10 +1,10 @@
 # Sequences
-## A collection of Swift Generators and Sequence
+## A collection of Swift Generators and Sequences
 ---
 
 ### UIColor
 
-The `rainbowGenerator` and `rainbowSequences` produce a sequence of UIColors. The algorithm uses a Sine wave to calculate the next UIColor in the sequence which creates a nice rainbow effect.
+The `rainbowGenerator` and `rainbowSequence` produce a sequence of UIColors. The algorithm uses a Sine wave to calculate the next UIColor in the sequence which creates a nice rainbow effect.
 
 `let rainbow = UIColor.rainbowSequence()`
 
