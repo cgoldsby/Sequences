@@ -356,7 +356,7 @@
 		EBE51B831CD51DF000D1C678 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = SequencesTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.cgoldsby.SequencesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,7 +366,7 @@
 		EBE51B841CD51DF000D1C678 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = SequencesTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.cgoldsby.SequencesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
