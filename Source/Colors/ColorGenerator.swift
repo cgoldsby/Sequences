@@ -30,13 +30,25 @@ enum Default {
 extension UIColor {
     
     /// http://krazydad.com/tutorials/makecolors.php
-    public static func rainbowGenerator(frequency frequency:    CGFloat = Default.frequency,
-                                                  phase1:       CGFloat = Default.phase1,
-                                                  phase2:       CGFloat = Default.phase2,
-                                                  phase3:       CGFloat = Default.phase3,
-                                                  amplitude:    CGFloat = Default.amplitude,
-                                                  center:       CGFloat = Default.center,
-                                                  `repeat`:     Bool    = false) -> AnyGenerator<UIColor> {
+
+    /**
+     Generates the `next` color using a Sine wave.
+     - returns: `AnySequence<UIColor>`
+     - parameter frequency: how fast the sine wave oscillates
+     - parameter phase1: color phase in radians for red
+     - parameter phase2: color phase in radians for green
+     - parameter phase3: color phase in radians for blue
+     - parameter amplitude: how high and low the sine wave reaches.
+     - parameter center: the center position of the sine wave.
+     - parameter repeat: if `true` the sequence will continue infinitely; defaults to false
+     */
+        public static func rainbowGenerator(frequency frequency:    CGFloat = Default.frequency,
+                                                      phase1:       CGFloat = Default.phase1,
+                                                      phase2:       CGFloat = Default.phase2,
+                                                      phase3:       CGFloat = Default.phase3,
+                                                      amplitude:    CGFloat = Default.amplitude,
+                                                      center:       CGFloat = Default.center,
+                                                      `repeat`:     Bool    = false) -> AnyGenerator<UIColor> {
         var iteration = 0
         
         return AnyGenerator {
@@ -59,7 +71,7 @@ extension UIColor {
     }
 }
 
-// General equation for calculating the sine.
+/// General equation for calculating the sine.
 private func sin(frequency frequency:   CGFloat,
                            iteration:   Int,
                            phase:       CGFloat,
@@ -69,6 +81,7 @@ private func sin(frequency frequency:   CGFloat,
     return sin(frequency * CGFloat(iteration) + phase) * amplitude + center
 }
 
+/// Given the frequency and iteration has the sine wave completed at least one cycle. 
 private func didRepeat(frequency frequency: CGFloat, iteration: Int) -> Bool {
     return frequency * CGFloat(iteration) > 𝟤π
 }
