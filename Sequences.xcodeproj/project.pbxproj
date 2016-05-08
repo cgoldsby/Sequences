@@ -11,6 +11,8 @@
 		EBE51B761CD51DF000D1C678 /* Sequences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE51B6B1CD51DF000D1C678 /* Sequences.framework */; };
 		EBE51B871CD51F2200D1C678 /* ColorSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE51B861CD51F2200D1C678 /* ColorSequence.swift */; };
 		EBE51B891CD51F6400D1C678 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE51B881CD51F6400D1C678 /* ColorGenerator.swift */; };
+		EBE5B98F1CDFE6C100FC6877 /* FibonacciGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5B98E1CDFE6C100FC6877 /* FibonacciGeneratorTests.swift */; };
+		EBE5B9911CDFE7FB00FC6877 /* FibonacciGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5B9901CDFE7FB00FC6877 /* FibonacciGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		EBE51B7C1CD51DF000D1C678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE51B861CD51F2200D1C678 /* ColorSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSequence.swift; sourceTree = "<group>"; };
 		EBE51B881CD51F6400D1C678 /* ColorGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
+		EBE5B98E1CDFE6C100FC6877 /* FibonacciGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciGeneratorTests.swift; sourceTree = "<group>"; };
+		EBE5B9901CDFE7FB00FC6877 /* FibonacciGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				EBE51B851CD51EE600D1C678 /* Colors */,
-				EBE51B6E1CD51DF000D1C678 /* Sequences.h */,
+				EBE5B98C1CDFE68600FC6877 /* Fibonacci */,
 				EBE51B701CD51DF000D1C678 /* Info.plist */,
+				EBE51B6E1CD51DF000D1C678 /* Sequences.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 		EBE51B791CD51DF000D1C678 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				EBE5B98D1CDFE69C00FC6877 /* Fibonacci */,
 				EBE51B7C1CD51DF000D1C678 /* Info.plist */,
 			);
 			path = Tests;
@@ -95,6 +101,22 @@
 				EBE51B861CD51F2200D1C678 /* ColorSequence.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		EBE5B98C1CDFE68600FC6877 /* Fibonacci */ = {
+			isa = PBXGroup;
+			children = (
+				EBE5B9901CDFE7FB00FC6877 /* FibonacciGenerator.swift */,
+			);
+			path = Fibonacci;
+			sourceTree = "<group>";
+		};
+		EBE5B98D1CDFE69C00FC6877 /* Fibonacci */ = {
+			isa = PBXGroup;
+			children = (
+				EBE5B98E1CDFE6C100FC6877 /* FibonacciGeneratorTests.swift */,
+			);
+			path = Fibonacci;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE5B9911CDFE7FB00FC6877 /* FibonacciGenerator.swift in Sources */,
+				EBE5B98F1CDFE6C100FC6877 /* FibonacciGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,16 +380,19 @@
 		EBE51B831CD51DF000D1C678 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.cgoldsby.SequencesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EBE51B841CD51DF000D1C678 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.cgoldsby.SequencesTests;
