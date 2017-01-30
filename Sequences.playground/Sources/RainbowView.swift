@@ -1,24 +1,24 @@
 import Foundation
 import UIKit
 
-private let width   = 24
 
+private let width   = 24
 private let height  = 32
 
-public class RainbowView: UIView {
+final public class RainbowView: UIView {
     
     public init(sequences: [AnySequence<UIColor>], length: Int? = nil) {
         let numberOfColors: Int
         
         if let length = length {
             numberOfColors = length
-            
-        } else {
+        }
+        else {
             numberOfColors = 21
         }
         
         super.init(frame: CGRect(x: 0, y: 0, width: width * numberOfColors, height: height * sequences.count))
-        addColorSubviews(sequences, length: length)
+        addColorSubviews(sequences: sequences, length: length)
  
     }
     
@@ -40,7 +40,7 @@ public class RainbowView: UIView {
                 addSubview(view)
                 x += width
                 
-                if let length = length where count > length {
+                if let length = length, count > length {
                     break
                 }
                 
