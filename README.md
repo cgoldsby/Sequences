@@ -1,10 +1,9 @@
 # Sequences
-## A collection of Swift Generators and Sequences
----
+## A collection of Swift Iterators and Sequences
 
 ### UIColor
 
-The `rainbowGenerator` and `rainbowSequence` produce a sequence of UIColors. The algorithm uses a Sine wave to calculate the next UIColor in the sequence which creates a nice rainbow effect.
+The `rainbowIterator` and `rainbowSequence` produce a sequence of UIColors. The algorithm uses a Sine wave to calculate the next UIColor in the sequence which creates a nice rainbow effect.
 
 `let rainbow = UIColor.rainbowSequence()`
 
@@ -29,11 +28,15 @@ For more information on altering the color in the sequence please refer to the a
 
 ```
 // Sequences of UIColors with a phase shift of 10°
-let phaseShifts: [AnySequence<UIColor>] = 120.stride(through: 0, by: -10).map {
+let phaseShifts: [AnySequence<UIColor>] = stride(from: 120, through: 0, by: -10).map {
     let phase = $0.radians
     return UIColor.rainbowSequence(phase1: 0, phase2: phase, phase3: phase * 2, repeat: true)
 }
 ```
 ![Grid Rainbow](https://raw.githubusercontent.com/cgoldsby/Sequences/master/Images/rainbow-grid.png)
 
+
+### Fibonacci
+
+The `fibonacciIterator` iterates trough the Fibonacci sequence.
 
