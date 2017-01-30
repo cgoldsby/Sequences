@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 func fibonacciIterator() -> AnyIterator<Int> {
     var current = 0
     var next = 1
