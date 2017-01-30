@@ -10,9 +10,9 @@
 		EBE51B6F1CD51DF000D1C678 /* Sequences.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE51B6E1CD51DF000D1C678 /* Sequences.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBE51B761CD51DF000D1C678 /* Sequences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE51B6B1CD51DF000D1C678 /* Sequences.framework */; };
 		EBE51B871CD51F2200D1C678 /* ColorSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE51B861CD51F2200D1C678 /* ColorSequence.swift */; };
-		EBE51B891CD51F6400D1C678 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE51B881CD51F6400D1C678 /* ColorGenerator.swift */; };
+		EBE51B891CD51F6400D1C678 /* ColorIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE51B881CD51F6400D1C678 /* ColorIterator.swift */; };
 		EBE5B98F1CDFE6C100FC6877 /* FibonacciGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5B98E1CDFE6C100FC6877 /* FibonacciGeneratorTests.swift */; };
-		EBE5B9911CDFE7FB00FC6877 /* FibonacciGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5B9901CDFE7FB00FC6877 /* FibonacciGenerator.swift */; };
+		EBE5B9911CDFE7FB00FC6877 /* FibonacciIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5B9901CDFE7FB00FC6877 /* FibonacciIterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +32,9 @@
 		EBE51B751CD51DF000D1C678 /* SequencesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SequencesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE51B7C1CD51DF000D1C678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE51B861CD51F2200D1C678 /* ColorSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSequence.swift; sourceTree = "<group>"; };
-		EBE51B881CD51F6400D1C678 /* ColorGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
+		EBE51B881CD51F6400D1C678 /* ColorIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorIterator.swift; sourceTree = "<group>"; };
 		EBE5B98E1CDFE6C100FC6877 /* FibonacciGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciGeneratorTests.swift; sourceTree = "<group>"; };
-		EBE5B9901CDFE7FB00FC6877 /* FibonacciGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciGenerator.swift; sourceTree = "<group>"; };
+		EBE5B9901CDFE7FB00FC6877 /* FibonacciIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciIterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 		EBE51B851CD51EE600D1C678 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
-				EBE51B881CD51F6400D1C678 /* ColorGenerator.swift */,
+				EBE51B881CD51F6400D1C678 /* ColorIterator.swift */,
 				EBE51B861CD51F2200D1C678 /* ColorSequence.swift */,
 			);
 			path = Colors;
@@ -106,7 +106,7 @@
 		EBE5B98C1CDFE68600FC6877 /* Fibonacci */ = {
 			isa = PBXGroup;
 			children = (
-				EBE5B9901CDFE7FB00FC6877 /* FibonacciGenerator.swift */,
+				EBE5B9901CDFE7FB00FC6877 /* FibonacciIterator.swift */,
 			);
 			path = Fibonacci;
 			sourceTree = "<group>";
@@ -180,9 +180,11 @@
 				TargetAttributes = {
 					EBE51B6A1CD51DF000D1C678 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 					};
 					EBE51B741CD51DF000D1C678 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -227,7 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE51B871CD51F2200D1C678 /* ColorSequence.swift in Sources */,
-				EBE51B891CD51F6400D1C678 /* ColorGenerator.swift in Sources */,
+				EBE51B891CD51F6400D1C678 /* ColorIterator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBE5B9911CDFE7FB00FC6877 /* FibonacciGenerator.swift in Sources */,
+				EBE5B9911CDFE7FB00FC6877 /* FibonacciIterator.swift in Sources */,
 				EBE5B98F1CDFE6C100FC6877 /* FibonacciGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +359,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -374,6 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.cgoldsby.Sequences;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -386,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.cgoldsby.SequencesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -397,6 +402,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.cgoldsby.SequencesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

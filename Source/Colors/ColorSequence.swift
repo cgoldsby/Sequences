@@ -20,21 +20,21 @@ extension UIColor {
      - parameter amplitude: how high and low the sine wave reaches.
      - parameter center: the center position of the sine wave.
      - parameter repeat: if `true` the sequence will continue infinitely; defaults to false
-    */
-    public static func rainbowSequence(frequency  frequency:   CGFloat = Default.frequency,
-                                                  phase1:      CGFloat = Default.phase1,
-                                                  phase2:      CGFloat = Default.phase2,
-                                                  phase3:      CGFloat = Default.phase3,
-                                                  amplitude:   CGFloat = Default.amplitude,
-                                                  center:      CGFloat = Default.center,
-                                                  `repeat`:    Bool    = false) -> AnySequence<UIColor> {
+     */
+    public static func rainbowSequence(frequency:   CGFloat = Default.frequency,
+                                       phase1:      CGFloat = Default.phase1,
+                                       phase2:      CGFloat = Default.phase2,
+                                       phase3:      CGFloat = Default.phase3,
+                                       amplitude:   CGFloat = Default.amplitude,
+                                       center:      CGFloat = Default.center,
+                                       repeat:      Bool    = false) -> AnySequence<UIColor> {
         
-        return AnySequence(rainbowGenerator(frequency:  frequency,
-                                            phase1:     phase1,
-                                            phase2:     phase2,
-                                            phase3:     phase3,
-                                            amplitude:  amplitude,
-                                            center:     center,
-                                            repeat:     `repeat`))
+        return AnySequence(rainbowIterator(frequency:  frequency,
+                                           phase1:     phase1,
+                                           phase2:     phase2,
+                                           phase3:     phase3,
+                                           amplitude:  amplitude,
+                                           center:     center,
+                                           repeat:     `repeat`))
     }
 }
