@@ -9,17 +9,17 @@
 import Foundation
 
 
-private let π = CGFloat(M_PI)
+private let π = CGFloat(Double.pi)
 private let 𝟤π = 2 * π
 
-enum Default {
+public enum Default {
     
-    static let phase1:      CGFloat = 0         // 0 °
-    static let phase2:      CGFloat = 2 * π / 3 // 120°
-    static let phase3:      CGFloat = 4 * π / 3 // 240°
-    static let frequency:   CGFloat = 0.3
-    static let amplitude:   CGFloat = 255 / 2
-    static let center:      CGFloat = 255 / 2
+    public static let phase1:      CGFloat = 0         // 0 °
+    public static let phase2:      CGFloat = 2 * π / 3 // 120°
+    public static let phase3:      CGFloat = 4 * π / 3 // 240°
+    public static let frequency:   CGFloat = 0.3
+    public static let amplitude:   CGFloat = 255 / 2
+    public static let center:      CGFloat = 255 / 2
 }
 
 extension UIColor {

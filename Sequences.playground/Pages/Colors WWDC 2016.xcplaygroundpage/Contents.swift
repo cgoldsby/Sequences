@@ -3,14 +3,14 @@
 import Foundation
 import Sequences
 import UIKit
-import XCPlayground
+import PlaygroundSupport
 
 
 let containerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 375.0, height: 667.0))
 
 containerView.backgroundColor = UIColor(red: 0.16, green: 0.17, blue: 0.22, alpha:1.00)
 
-XCPlaygroundPage.currentPage.liveView = containerView
+PlaygroundPage.current.liveView = containerView
 
 let strings = [
     "Hello love at first swipe.",
